@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header styling start */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#task_list {
+    font-size: 6vh;
+}
+
+#add_item {
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+#list {
+    color: rgb(32, 210, 226);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header styling end */
+
+body {
+    background-color: rgba(161, 161, 161, 0.59);
+    color: rgb(17, 5, 83);
+    margin: 3vh 10vw 0;
+}
+
+
+/* parent  */
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#msg {
+    font-size: 25px;
+    position: absolute;
+    left: 13%;
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+.item {
+    background-color: rgb(148 208 225);
+    height: 300px;
+    width: 250px;
+    padding-bottom: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    word-wrap: break-word;
+    text-transform: capitalize;
+}
+
+.item:hover {
+    box-shadow: 1px 1px 20px rgb(225 217 148);
+}
+
+.c2 {
+    width: 100%;
+    padding: 15px 0 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(101, 8, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.tasks {
+    color: rgb(50, 31, 224);
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+    font-family: "Oswald", sans-serif;
+}
+
+.close {
+    background-color: tomato;
+    padding: 6px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    align-items: center;
+
+}
+
+.add_task {
+    color: black;
+    font-size: 1.785rem;
+    cursor: pointer;
+    position: absolute;
+    right: 75px;
+    bottom: 20px;
+}
+
+.btn {
+    color: white;
+    background-color: #2288ed;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.marked {
+    color: red;
+    text-decoration: line-through;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Add item/ Add list popup*/
+
+.new {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: default;
+    position: absolute;
+    top: calc((100vh - 200px) / 2);
+    left: calc((100vw - 400px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new p {
+    color: rgb(6 5 64);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.new input {
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px grey;
+    margin-bottom: 10px;
+}
+
+.popupWindow button {
+    color: white;
+    background-color: orangered;
+    width: 100px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 8px 10px;
+}
+
+
+/* Item Expanded View */
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 21, 21, 0.547);
+}
+
+.expPop {
+    background-color: black;
+}
+
+.item_expand_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 40px;
+}
+
+.expBack {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.itemExpTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.Add_expression {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.item_Detail {
+    background-color: white;
+    width: 200px;
+    min-height: 260px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+input[type=checkbox] {
+    accent-color: red;
+}
+
+#cards {
+    width: 288px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(31, 221, 231);
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.addbtn {
+    border: 0;
+    background-color: rgb(12, 23, 175);
+}
+
+#togglethis {
+    background-color: rgba(11, 11, 11, 0.365);
+}
+
+.boxview {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#headingcard {
+    padding-left: 60px;
+    text-decoration-line: 10px solid blac;
+}
+
+.flwin {
+    filter: brightness(120px);
+}
+
+.inneraddbtn {
+    height: 35px;
+    width: 35px;
+}
+@media (max-width: 724px) {
+    .container {
+        flex-direction: column;
+    }
+    #task_list {
+        font-size: 10vh;
+    }
+    #add_item {
+        font-size: 3vh;
+        margin-top: 20px;
+    }
+    #msg {
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+    }
+    .new {
+        width: 300px;
+        height: 200px;
+        top: calc((100vh - 200px) / 2);
+        left: calc((100vw - 300px) / 2);
+    }
+    #parent {
+        justify-content: center;
+    }
+}
